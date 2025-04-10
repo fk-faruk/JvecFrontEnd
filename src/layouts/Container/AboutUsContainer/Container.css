@@ -1,0 +1,31 @@
+.contStyle {
+    background: 
+    radial-gradient(circle at 50% 90%, #0327a1 20%, transparent 70%), 
+    linear-gradient(to right, #05071e, #05071e); 
+}
+
+.b-radius {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+
+.buttonColor {
+    border-radius: 80px;
+    border-top: solid 1px grey;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+    height: 12vh;
+    width: 25vh;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    /* transition: background 0.3s ease; */
+    text-align: center; 
+}

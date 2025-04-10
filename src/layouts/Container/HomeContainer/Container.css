@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttonStyle {
+    border-radius: 30px;
+    background-color: #2e6e9e;
+}
+
+.b-radius {
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-align: center;
+}
