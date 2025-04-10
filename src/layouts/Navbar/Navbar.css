@@ -1,0 +1,19 @@
+.transparent {
+    background: 
+    radial-gradient(circle at 90% 100%, #0327a1 0%, transparent 57%), 
+    linear-gradient(to right, #05071e, #05071e); 
+}
+
+
+
+@media (min-width: 1024px) {
+    nav{
+        padding-left: 8vh;
+        padding-right: 8vh;
+    }
+    .gapSpacing{
+     
+        gap: 15px;
+        
+    }
+}
