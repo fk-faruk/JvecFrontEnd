@@ -1,4 +1,4 @@
-import React from "react";
+
 import Button from "../../../components/CButton/Button";
 import Frame from "../../../assets/Frame.png";
 import Frame20 from '../../../assets/Frame20.png'
