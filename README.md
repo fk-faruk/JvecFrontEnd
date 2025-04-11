@@ -33,7 +33,7 @@ A portfolio website for KeySystem Technologies built with **React**, **Tailwind 
 ### 1. Clone the repository
 
 git clone https://github.com/fk-faruk/JvecFrontEnd
-cd your-portfolio
+cd JvecFrontEnd
 
 
 
