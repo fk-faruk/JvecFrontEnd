@@ -11,6 +11,16 @@
     transition: background 0.3s ease;
     text-align: center;
   }
+
+
+  @media (max-width: 767px) {
+    .gradient-button{
+      font-size: 11px;
+      padding-bottom: 2px;
+      text-align: center;
+    
+    }
+  }
   
   /* .gradient-button:hover {
     background: linear-gradient(to right, #002b5c, #2a8bd8, #002b5c);

@@ -5,13 +5,13 @@ import Frame20 from '../../../assets/Frame20.png'
 
 const CertContainer = () => {
   return (
-    <div className="text-white text-center " style={{ marginTop: "25vh" }}>
-      <h4 className=" text-5xl font-medium">
+    <div className="text-white text-center " style={{ marginTop: "15vh" }}>
+      <h4 className=" text-3xl  md:text-5xl font-medium">
         Compliance Certifications/ <br />
         Standards We Specialize In
       </h4>
 
-      <h6 className="text-xl font-extralight my-6">
+      <h6 className="text-lg  font-extralight my-6">
         Elevate Your Organization's Security Posture with Our <br />{" "}
         Compliance/Standards Consulting Services
       </h6>
@@ -25,9 +25,9 @@ const CertContainer = () => {
       </div>
 
       <div  style={{ marginTop: "25vh" }}>
-        <h4 className=" text-5xl font-medium">They Trust Us</h4>
+        <h4 className=" text-3xl md:text-5xl font-medium">They Trust Us</h4>
 
-        <h6 className="text-xl font-extralight my-6">And so can you</h6>
+        <h6 className="text-lg fontT font-extralight my-6">And so can you</h6>
 
         <div className="py-8 flex flex-row justify-center">
           <img src={Frame20} alt="" />

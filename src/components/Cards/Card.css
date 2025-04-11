@@ -1,5 +1,5 @@
 .cardStyle {
-    height: 40vh;
+    height: 35vh;
     width: max-content;
     
 }
@@ -8,4 +8,18 @@
     background: 
     radial-gradient(circle at 90% 30%, #0327a1 -5%, transparent 57%), 
     linear-gradient(to right, #05071e, #05071e); 
+    /* width: 30vw; */
+    
+}
+
+
+@media (max-width: 767px) {
+    .cardStyle{
+        height: 15vh;
+        width: max-content;
+    }
+
+    .bgColor {
+        width: 100%
+    }
 }

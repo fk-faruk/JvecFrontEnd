@@ -1,0 +1,20 @@
+
+@media (min-width: 1024px) {
+ 
+    .padding {
+
+        margin-left: 5vw;
+        margin-right: 5vw;
+       
+    }
+
+}
+
+
+@media (max-width: 724px) {
+ 
+   .fontStyle{
+        font-size: 17px;
+   }
+
+}

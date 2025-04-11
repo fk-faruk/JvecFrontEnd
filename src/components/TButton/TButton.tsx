@@ -1,4 +1,5 @@
 import React from "react";
+import { RxCursorArrow } from "react-icons/rx";
 
 import "./TButton.css"
 
@@ -12,6 +13,7 @@ type TransparentButtonProps = {
 
 const TButton: React.FC<TransparentButtonProps> = ({
   text,
+  icon,
   onClick,
   className = "",
   type = "button",
@@ -21,10 +23,15 @@ const TButton: React.FC<TransparentButtonProps> = ({
       <button
         type={type}
         onClick={onClick}
-        className={`text-white
+        className={`text-white 
         ${className}`}
       >
         {text}
+        {icon ?
+        <div className=" flex flex-row justify-center">
+          <RxCursorArrow color="blue"/>
+        </div> : ''
+        }
       </button>
     </>
   );

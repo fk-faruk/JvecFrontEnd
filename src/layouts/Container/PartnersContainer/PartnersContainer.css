@@ -1,0 +1,16 @@
+@media (min-width: 1024px) {
+
+    .font{
+        font-size: 60px;
+    }
+
+    .fontT{
+        font-size: large;
+    }
+    .fontM {
+        font-size: 30px;
+    }
+
+
+
+}

@@ -6,15 +6,15 @@ import Frame from '../../../assets/frame200.png'
 const ContactUs = () => {
   return (
     <section className="containerBg w-full">
-      <div className="grid grid-cols-4 backgroundCont">
+      <div className="grid grid-col-1 md:grid-cols-4 backgroundCont">
         <div className="col-span-3">
           <div className="text-white " style={{ margin: "4vh" }}>
-            <h4 className=" text-5xl font-medium">Ready to get started?</h4>
+            <h4 className=" text-3xl md:text-5xl font-medium">Ready to get started?</h4>
 
-            <h6 className="text-xl font-extralight my-6">Shoot us a Mail</h6>
+            <h6 className="text-lg md:text-xl font-extralight my-6">Shoot us a Mail</h6>
 
             <h5
-              className="text-2xl font-extralight"
+              className="text-lg md:text-2xl font-extralight"
               style={{ lineHeight: 1.5 }}
             >
               <span>
@@ -38,10 +38,10 @@ const ContactUs = () => {
 
           
         </div>
-        <div className="col-span-1" >
+        <div className="md:col-span-1 hidden md:block" >
             <img src={Frame} alt="" className="w-full imageRad"  />
         </div>
-      </div>
+      </div> 
     </section>
   );
 };

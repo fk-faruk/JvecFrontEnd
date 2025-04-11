@@ -15,17 +15,97 @@
 }
 
 
+@media (min-width: 1024px) {
+    .displayImg {
+        position: absolute;
+        object-fit: cover;
+        top: 10px;
+        left: 25%;
+    }
+
+    .font{
+        font-size: 60px;
+    }
+
+    .fontT{
+        font-size: large;
+    }
+    .fontM {
+        font-size: 30px;
+    }
+
+    .marginS {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+    .buttonColor {
+         height: 12vh; 
+         width: 12vw;
+         padding: 15px 25px;
+    }
+
+    .fontP {
+        font-size: 25px;
+    }
+
+    .flexCol {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        gap: 16px;
+    }
+
+}
+
+/* .flexCol {
+    display: flex;
+    margin-left: 10vw;
+    height: 10vw;
+} */
+
+
+
+
+.displayImg {
+    position: absolute;
+    /* object-fit: cover; */
+    top: 85%
+    /* left: 25vw; */
+    /* width: 50vw; */
+    /* height: 5    0vh; */
+}
+
+
+
+
+
 .buttonColor {
     border-radius: 80px;
     border-top: solid 1px grey;
     border-left: solid 1px grey;
     border-right: solid 1px grey;
-    height: 12vh;
-    width: 25vh;
-    padding: 15px 25px;
+    /* height: 12vh; */
+    /* width: 25vh; */
+    padding: 10px 20px;
     font-size: 20px;
     font-weight: 400;
     cursor: pointer;
     /* transition: background 0.3s ease; */
     text-align: center; 
+}
+
+
+@media (max-width: 1024px) {
+    .displayImg {
+        position: relative;
+    }
+    .hide {
+        display: none;
+    }
+
+    .marginS {
+        gap: 0px;
+    }
 }

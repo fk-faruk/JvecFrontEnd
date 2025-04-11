@@ -17,3 +17,11 @@
         
     }
 }
+
+
+@media (max-width: 767px) {
+    .image {
+        height: 30px;
+    }
+}
+

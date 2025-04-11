@@ -6,11 +6,11 @@ const PartnerContainer = () => {
     return ( 
         <div>
                 <div className="text-white text-center " style={{ marginTop: "15vh" }}>
-      <h4 className=" text-5xl font-medium">
+      <h4 className=" text-3xl md:text-5xl font-medium">
       Our Partners
       </h4>
 
-      <h6 className="text-xl font-extralight my-6">
+      <h6 className="text-xl fontT font-extralight my-6">
       Creating a Synergy with global brands
       </h6>
       </div>

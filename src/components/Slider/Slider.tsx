@@ -6,6 +6,7 @@ import Frame4 from '../../assets/Frame4.png';
 import Frame5 from '../../assets/Frame5.png';
 import Frame6 from '../../assets/Frame6.png';
 import Frame7 from '../../assets/Frame7.png';
+import './Slider.css'
 
 type Item = {
   icon: string;
@@ -22,7 +23,7 @@ const initialItems: Item[] = [
 ];
 
 const Slider: React.FC = () => {
-  const [visibleItems, setVisibleItems] = useState<Item[]>([...initialItems]);
+  const [visibleItems, setVisibleItems] = useState<Item[]>(initialItems.slice(0, 5));
   const [translateX, setTranslateX] = useState<number>(0);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -42,10 +43,11 @@ const Slider: React.FC = () => {
     }, 500);
   };
 
+  
   useEffect(() => {
     const interval = setInterval(() => {
       slide();
-    }, 4000);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
@@ -54,20 +56,29 @@ const Slider: React.FC = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full bg-[#05071e]">
+    <div>
+          <div className="overflow-hidden w-full bg-[#05071e] mt-4 ">
       <div
-        className="flex items-center justify-around transition-transform duration-500 ease-in-out py-2" style={{gap: 100}}
+        className="flex items-center justify-center  transition-transform duration-500 gapStyle ease-in-out py-2 bg-[#05071e] " 
      
       >
         {visibleItems.map((item, index) => (
-          <div key={index} className="flex items-center justify-center gap-2" style={{ borderRadius: '5px', padding:'4px'}}>
-            <img src={item.icon} />
+          <div key={index} className="flex items-center justify-center  bg-[#05071e] " style={{ borderRadius: '5px', padding:'4px'}}>
+            <img src={item.icon} className='image' />
             {/* <span className="ml-2 text-lg font-bold">{item.text}</span> */}
           </div>
         ))}
       </div>
     </div>
+    </div>
+
   );
 };
 
 export default Slider;
+
+
+
+
+
+
