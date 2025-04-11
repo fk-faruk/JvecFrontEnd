@@ -43,6 +43,7 @@ const AContainer = () => {
       <div
         className=" text-white text-center contStyle"
         style={{ marginTop: "10vh" }}
+        id="About"
       >
         <h4 className=" text-3xl md:text-5xl font-medium">
           Why we are your Trusted Consultant
@@ -75,6 +76,7 @@ const AContainer = () => {
       <div
         className="text-white text-center "
         style={{ paddingTop: "10vh" , paddingBottom:'5vh',  backgroundColor: "#05071e" }}
+        id="Services"
       >
         <h4 className=" text-3xl md:text-5xl font-medium">Our Offerings</h4>
 
