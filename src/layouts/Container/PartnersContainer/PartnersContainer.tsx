@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import partnerImage from '../../../assets/Frame11.png'
 
 

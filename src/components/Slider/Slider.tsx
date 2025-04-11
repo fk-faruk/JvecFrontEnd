@@ -24,11 +24,11 @@ const initialItems: Item[] = [
 
 const Slider: React.FC = () => {
   const [visibleItems, setVisibleItems] = useState<Item[]>(initialItems.slice(0, 5));
-  const [translateX, setTranslateX] = useState<number>(0);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  // const [translateX, setTranslateX] = useState<number>(0);
+  const timeoutRef = useRef<number | null>(null);
 
   const slide = () => {
-    setTranslateX(100);
+    // setTranslateX(100);
 
     timeoutRef.current = setTimeout(() => {
       setVisibleItems((prevItems) => {
@@ -39,7 +39,7 @@ const Slider: React.FC = () => {
         }
         return updated;
       });
-      setTranslateX(0);
+      // setTranslateX(0);
     }, 500);
   };
 
@@ -64,7 +64,7 @@ const Slider: React.FC = () => {
       >
         {visibleItems.map((item, index) => (
           <div key={index} className="flex items-center justify-center  bg-[#05071e] " style={{ borderRadius: '5px', padding:'4px'}}>
-            <img src={item.icon} className='image' />
+            <img alt='' src={item.icon} className='image' />
             {/* <span className="ml-2 text-lg font-bold">{item.text}</span> */}
           </div>
         ))}

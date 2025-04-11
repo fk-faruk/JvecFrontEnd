@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import svg from "../../../assets/Vector.png";
 import image from "../../../assets/Rectangle.png";
 import Slider from "../../../components/Slider/Slider";
